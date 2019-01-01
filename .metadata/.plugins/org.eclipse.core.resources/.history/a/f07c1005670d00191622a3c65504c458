@@ -1,0 +1,33 @@
+package SeleniumLearning;
+
+import java.io.IOException;
+
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
+
+import pageObject.LandingPage;
+import pageObject.LoginPage;
+
+public class Home extends base {
+
+	
+	@Test
+	public void basePageNavigtion() throws IOException
+	{
+		driver=initializeDriver(); 
+		driver.get("https://www.facebook.com/");
+		LandingPage login= new LandingPage(driver);
+		login.getLogin().sendKeys("aqib ");
+		LoginPage Enter = new LoginPage(driver);
+		LoginPage click = new LoginPage(driver);
+		Enter.getEmail().sendKeys("aqib");
+		Enter.getPassword().sendKeys("aqin");
+		click.loginButton().click();
+	}
+	
+	@DataProvider
+	public void getData()
+	{
+		Object[][] data = new Object()
+	}
+}

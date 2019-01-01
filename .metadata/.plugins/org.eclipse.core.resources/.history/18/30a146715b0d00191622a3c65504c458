@@ -1,0 +1,17 @@
+package SeleniumLearning;
+
+import java.io.IOException;
+
+import org.testng.annotations.Test;
+
+public class Home extends base {
+
+	
+	@Test
+	public void basePageNavigtion() throws IOException
+	{
+		driver=initializeDriver(); 
+		driver.get("https://www.google.com/?gws_rd=ssl");
+		
+	}
+}

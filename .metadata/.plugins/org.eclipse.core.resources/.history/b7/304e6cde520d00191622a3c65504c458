@@ -1,0 +1,15 @@
+package SeleniumLearning;
+
+import java.io.FileInputStream;
+import java.nio.channels.FileLockInterruptionException;
+import java.util.Properties;
+
+public class base {
+	
+	public void  initializeDriver()
+	{
+		Properties prop = new Properties();
+		FileInputStream fis = new FileInputStream("C:\\Users\\Aqib\\Desktop\\Selenium_project\\myMavenProject\\src\\main\\java\\SeleniumLearning\\data.Properties");
+	}
+
+}
